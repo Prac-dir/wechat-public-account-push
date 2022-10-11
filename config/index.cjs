@@ -8,60 +8,90 @@
 const USER_CONFIG = {
 
   // 使用微信测试号：公众号APP_ID
-  APP_ID: '',
+  APP_ID: 'wx9e11f0e64eb357aa',
 
   // 使用微信测试号：公众号APP_SECRET
-  APP_SECRET: '',
+  APP_SECRET: '5a4649cd15ab1d1ee3908cf82bacea64',
 
   PROVINCE: '广东',
-  CITY: '惠州',
+  CITY: '广州',
 
   USERS: [
     {
       // 想要发送的人的名字
-      name: '宝贝',
+      name: '雅莹',
       // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: '',
+      id: 'oG7715q92exJOy9dsz8iWAsvJsb0',
       // 使用微信测试号：你想对他发送的模板消息的模板ID
-      useTemplateId: '',
+      // useTemplateId: '0RCPqifVBtL1CPkh82YPSrUT_5LzNZYCH3BYQkTXt5g',
+      useTemplateId: 'E0fva0Er7TK-hBZ5weqOrQl9MAxs_O9wYfnYnXDZdbg',
       // 新历生日, 仅用作获取星座运势, 格式必须为MM-DD
-      horoscopeDate: '12-27',
-      festivals: [
-        // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
-        {
-          type: '*生日', name: '宝贝', year: '1996', date: '09-09',
-        },
-        // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
-        {
-          type: '生日', name: '李四', year: '1996', date: '09-31',
-        },
-        {
-          type: '节日', name: '相识纪念日', year: '2020', date: '09-03',
-        },
-      ],
+      horoscopeDate: '07-17',
+      // festivals: [
+      //   // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
+      //   {
+      //     type: '*生日', name: '逼仔', year: '1996', date: '09-09',
+      //   },
+      //   // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
+      //   {
+      //     type: '生日', name: '李四', year: '1996', date: '09-31',
+      //   },
+      //   {
+      //     type: '节日', name: '相识纪念日', year: '2020', date: '09-03',
+      //   },
+      // ],
       // 我们在一起已经有xxxx天了的配置
       customizedDateList: [
         // 在一起的日子
-        { keyword: 'love_day', date: '2022-09-08' },
+        // { keyword: 'love_day', date: '2022-09-08' },
         // 结婚纪念日
-        { keyword: 'marry_day', date: '2022-09-09' },
+        // { keyword: 'marry_day', date: '2022-09-09' },
       ],
     },
+    {
+      // 想要发送的人的名字
+      name: 'self',
+      // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
+      id: 'oG7715jtkJhMmBn98XXh4n__m-lA',
+      // 使用微信测试号：你想对他发送的模板消息的模板ID
+      useTemplateId: 'E0fva0Er7TK-hBZ5weqOrQl9MAxs_O9wYfnYnXDZdbg',
+      // 新历生日, 仅用作获取星座运势, 格式必须为MM-DD
+      horoscopeDate: '03-12',
+      // festivals: [
+      //   // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
+      //   {
+      //     type: '*生日', name: '逼仔', year: '1996', date: '09-09',
+      //   },
+      //   // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
+      //   {
+      //     type: '生日', name: '李四', year: '1996', date: '09-31',
+      //   },
+      //   {
+      //     type: '节日', name: '相识纪念日', year: '2020', date: '09-03',
+      //   },
+      // ],
+      // 我们在一起已经有xxxx天了的配置
+      customizedDateList: [
+        // 在一起的日子
+        // { keyword: 'love_day', date: '2022-09-08' },
+        // 结婚纪念日
+        // { keyword: 'marry_day', date: '2022-09-09' },
+      ],
+    }
   ],
 
 
   // 【推送完成提醒】模板id, 用来看自己有没有发送成功的那个模板
-  CALLBACK_TEMPLATE_ID: '',
+  CALLBACK_TEMPLATE_ID: 'W7cW4cV4KCjOaS-9E4xPyfVcWQgpREeCKywlixGdwK0',
 
   CALLBACK_USERS: [
     {
       name: '自己',
       // 使用微信测试号：自己的微信id，扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: '',
+      id: 'oG7715jtkJhMmBn98XXh4n__m-lA',
     }
   ],
 
 }
-
 module.exports = USER_CONFIG
 
